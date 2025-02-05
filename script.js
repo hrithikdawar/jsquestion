@@ -19,6 +19,7 @@
 // let obj= {name: "John", age: 25, city: "New York"}
 //  let {name,city}=obj
 //  console.log(name,city)
+
 // 4. Using destructuring, assign a default value of "Guest" to user if it is not present in the object {id: 101}.
 // let obj={
 // ids:101
@@ -28,8 +29,7 @@
 
 // 5. Extract first and last from the nested object {person: {first: "Alice", last: "Johnson"}} using destructuring.
 
-// let obj= {
-//     person:{first: "Alice", last: "Johnson"}}
+// let obj= {person:{first: "Alice", last: "Johnson"}}
 // let {person:{first,last}}=obj
 // console.log(first,last)
 
@@ -40,7 +40,7 @@
 
 // let array= [100,200,300]
 
-// array.splice(1,1)
+//  array.splice(1,1)
 
 // const [...left]=array;
 // console.log(array);
@@ -82,11 +82,10 @@
 
 // let arr= [10,20]
 // let [a,b]= arr
-
    
 
 //     if (a<b) {
-//         c=a
+//       let  c=a
 //        console.log( a=b,b=c);
 //     }
 
@@ -111,6 +110,12 @@
 // 13. Using array destructuring, loop over an array [[1, "one"], [2, "two"], [3, "three"]] and print each key-value pair.
 
 
+// let arr= [[1, "one"], [2, "two"], [3, "three"]]
+// let [[a,a1],[b,b1],[c,c1]]=arr
+// arr.forEach(element => {
+//     console.log(element)
+    
+// });
 
 
 // 14. Write a function that takes an object {a: 5, b: 10, c: 15} as an argument and returns the sum of a and c using destructuring.
@@ -142,6 +147,11 @@
 
 // 17. Destructure an object {items: [{price: 100}, {price: 200}], discount: 0.1} to calculate the total price after discount.
 
+// let obj= {items: [{price: 100}, {price: 200}], discount: 0.1}
+// let {items,discount}=obj
+// let totalPrice = items.reduce((acc, cur) => acc += cur.price, 0)
+// let afterDiscountPrice = totalPrice - (totalPrice * discount)
+// console.log(afterDiscountPrice)
 
 // const object={items:[{price:100}, {price:200}], discount:0.1}
 
